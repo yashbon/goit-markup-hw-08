@@ -1,0 +1,80 @@
+    /*
+    title color                         #212121 
+    text color                          #757575 
+    top line color                      #ECECEC
+    overlay color                       rgba(47, 48, 58, 0.4)
+    main background color               #FFFFFF 
+    secondary background color          #F5F5F5
+    order button active color           #188CE8
+    overlay background color            #C4C4C4
+    accent color                        #2196F3
+    white color                         #FFFFFF
+    black color                         #000000 
+    background order service footer     #2F303A
+    text color contact footer           rgba(255, 255, 255, 0.6)
+    project border color                #EEEEEE
+    width gap                           30px
+    social & client link color          #AFB1B8
+    footer soclink background           rgba(255, 255, 255, 0.1)
+    backgroround sevice title           rgba(47, 48, 58, 0.8)
+    background about project            rgba(33, 150, 243, 0.9)
+    backdrop background color           rgba(0, 0, 0, 0.2)
+    close button border                 rgba(0, 0, 0, 0.1)
+    form comment color                  rgba(117, 117, 117, 0.5)
+    form border color                   rgba(33, 33, 33, 0.2)
+    footer input background             rgba(255, 255, 255, 0.3);
+    anime                               250ms cubic-bezier(0.4, 0, 0.2, 1)
+    */
+    
+    $titleColor: #212121;
+    $texCcolor: #757575;
+    $topLineColor: #ECECEC;
+    $mainBackgroundColor: #FFFFFF;
+    $secondaryBackgroundColor: #F5F4FA;
+    $overlayClor: rgba(47, 48, 58, 0.4);
+    $overlayBackgroundColor: #C4C4C4;
+    $accentColor: #2196F3;
+    $whiteColor: #FFFFFF;
+    $blackColor: #000000;
+    $footerBackgroundOrderService: #2F303A;
+    $footerContactColor: rgba(255, 255, 255, 0.6);
+    $orderButtonActive: #188CE8;
+    $projectBorderColor: #EEEEEE;
+    $socialClientLinkColor: #AFB1B8;
+    $footerSoclinkBackground: rgba(255, 255, 255, 0.1);
+    $backgroundAboutProject: rgba(33, 150, 243, 0.9);
+    $backgroroundSeviceTitle: rgba(47, 48, 58, 0.8);
+    $backdropBackgroundColor: rgba(0, 0, 0, 0.2);
+    $closeButtonBorder: rgba(0, 0, 0, 0.1);
+    $formCommentColor: rgba(117, 117, 117, 0.5);
+    $formBorderColor: rgba(33, 33, 33, 0.2);
+    $footerInputBackground: rgba(255, 255, 255, 0.3);
+    $widthGap: 30px;
+    $anime: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    // :root {
+    //     --title-color: #212121;
+    //     --text-color: #757575;
+    //     --top-line-color: #ECECEC;
+    //     --main-background-color: #FFFFFF;
+    //     --secondary-background-color: #F5F4FA;
+    //     --overlay-color: rgba(47, 48, 58, 0.4);
+    //     --overlay-background-color: #C4C4C4;
+    //     --accent-color: #2196F3;
+    //     --white-color: #FFFFFF;
+    //     --black-color: #000000;
+    //     --background-order-service-footer: #2F303A;
+    //     --footer-contact-color: rgba(255, 255, 255, 0.6);
+    //     --order-btn-actice: #188CE8;
+    //     --project-border-color: #EEEEEE;
+    //     --social-client-link-color: #AFB1B8;
+    //     --footer-soclink-background: rgba(255, 255, 255, 0.1);
+    //     --background-about-project: rgba(33, 150, 243, 0.9);
+    //     --backgroround-sevice-title: rgba(47, 48, 58, 0.8);
+    //     --backdrop-background-color: rgba(0, 0, 0, 0.2);
+    //     --close-button-border: rgba(0, 0, 0, 0.1);
+    //     --form-comment-color: rgba(117, 117, 117, 0.5);
+    //     --form-border-color: rgba(33, 33, 33, 0.2);
+    //     --footer-input-background: rgba(255, 255, 255, 0.3);
+    //     --width-gap: 30px;
+    //     --anime: 250ms cubic-bezier(0.4, 0, 0.2, 1)
+    // }

@@ -1,0 +1,139 @@
+// Modal form
+.modal__form-field {
+    display: flex;
+    flex-direction: column;
+    height: 58px;
+    margin-bottom: 10px;
+}
+
+.modal__form-label {
+    margin-bottom: 4px;
+    font-size: 12px;
+    line-height: 0.86;
+    letter-spacing: 0.01em;
+    color: $texCcolor;
+}
+
+.modal__wrop {
+    position: relative;
+}
+
+.modal__form-input {
+    width: 100%;
+    height: 40px;
+    padding-left: 42px;
+}
+
+.modal__form-icon {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    transition: color $anime, fill $anime, border $anime;
+}
+
+.modal__form-input,
+.modal__form-textarea {
+    border: 1px solid $formBorderColor;
+    border-radius: 4px;
+    transition: border $anime;
+}
+
+.modal__form-comment {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.modal__form-textarea {
+    height: 120px;
+    padding: 12px 16px;
+    resize: none;
+    &::placeholder {
+        font-family: inherit;
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.01em;
+        color: $formCommentColor;
+    }
+}
+
+:active,
+:hover,
+:focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+.modal__icon-close:hover,
+.modal__button-close:focus,
+.modal__form-input:hover,
+.modal__form-input:hover+.modal__form-icon,
+.modal__form-input:focus,
+.modal__form-input:focus+.modal__form-icon,
+.modal__form-textarea:hover,
+.modal__form-textarea:focus {
+    cursor: pointer;
+    border-color: $accentColor;
+    fill: $accentColor;
+}
+
+.modal__form-check {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.modal__check {
+    appearance: none;
+    &:checked+.modal__icon-check {
+        fill: $whiteColor;
+        background-color: $accentColor;
+        border-color: $accentColor;
+    }
+}
+
+.modal__icon-check {
+    margin-right: 8px;
+    vertical-align: middle;
+    border: 2px solid $titleColor;
+    border-radius: 2px;
+    fill: transparent;
+    transition: color $anime, fill $anime, border $anime;
+}
+
+.modal__form-agreement {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $texCcolor;
+}
+
+.terms-agreement {
+    color: $accentColor;
+}
+
+// Footer form
+.footer__form-wrop {
+    display: flex;
+    column-gap: 12px;
+}
+
+.footer__form-input {
+    width: 358px;
+    padding: 15px 16px;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: var(--footer-contact-color);
+    background-color: $footerBackgroundOrderService;
+    border: 1px solid $footerInputBackground;
+    border-radius: 4px;
+}
+
+.icon-subscribe {
+    fill: $whiteColor;
+    margin-left: 10px;
+}

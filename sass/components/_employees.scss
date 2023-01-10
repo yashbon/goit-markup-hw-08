@@ -1,0 +1,29 @@
+.employee-cards {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+    &__item {
+        background-color: $mainBackgroundColor;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+    }
+    &-text {
+        padding: 30px 0;
+        text-align: center;
+    }
+}
+
+.employee-title {
+    margin-bottom: 10px;
+    color: $titleColor;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+}
+
+.employee-description {
+    margin-bottom: 16px;
+    color: $texCcolor;
+    font-size: 16px;
+    line-height: 1.19;
+}

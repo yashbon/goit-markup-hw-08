@@ -1,0 +1,22 @@
+.clients__list {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+}
+
+.clients__link {
+    display: flex;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    fill: $socialClientLinkColor;
+    border: 1px solid $socialClientLinkColor;
+    border-radius: 4px;
+    transition: color $anime, fill $anime, border $anime;
+    &:hover,
+    &:focus {
+        color: $accentColor;
+        fill: $accentColor;
+        border: 1px solid $accentColor;
+    }
+}

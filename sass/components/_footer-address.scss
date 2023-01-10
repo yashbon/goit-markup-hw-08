@@ -1,0 +1,37 @@
+.footer__postal-address {
+    color: $whiteColor;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    transition: color $anime;
+    &:hover,
+    &:focus {
+        color: $accentColor;
+    }
+}
+
+.footer__link {
+    color: $footerContactColor;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    transition: color $anime;
+    &:hover,
+    &:focus {
+        color: $accentColor;
+    }
+}
+
+.footer__item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.footer__title {
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $whiteColor;
+}

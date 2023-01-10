@@ -1,0 +1,71 @@
+.header {
+    border-bottom: 1px solid $topLineColor;
+    &__container,
+    &__main-nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between
+    }
+    &__contacts {
+        display: flex;
+        align-items: center;
+        column-gap: 30px;
+        &-link {
+            display: flex;
+            align-items: center;
+            padding-top: 32px;
+            padding-bottom: 32px;
+            color: $texCcolor;
+            fill: $texCcolor;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 1.14;
+            letter-spacing: 0.02em;
+            transition: color $anime, fill $anime;
+        }
+        &-link:hover,
+        &-link:focus {
+            color: $accentColor;
+            fill: $accentColor;
+        }
+    }
+    &__link {
+        display: block;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        color: $titleColor;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        transition: color $anime;
+    }
+    &__item {
+        position: relative;
+    }
+    &__menu {
+        display: flex;
+        align-items: center;
+        column-gap: 50px;
+        .active,
+        a:hover,
+        a:focus {
+            color: $accentColor;
+        }
+    }
+    .active::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        left: 0;
+        bottom: -1px;
+        background-color: $accentColor;
+        border-radius: 2px;
+    }
+}
+
+.envelope,
+.smartphone {
+    margin-right: 10px;
+}
