@@ -1,13 +1,16 @@
 .clients__list {
     display: flex;
     align-items: center;
-    column-gap: 30px;
+    // column-gap: 30px;
+    gap: 30px;
+    flex-wrap: wrap;
 }
 
 .clients__link {
     display: flex;
     justify-content: center;
-    width: 170px;
+    // width: 170px;
+    width: 210px;
     height: 92px;
     fill: $socialClientLinkColor;
     border: 1px solid $socialClientLinkColor;

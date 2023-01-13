@@ -12,10 +12,45 @@
     background-color: $accentColor;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     transition: background-color $anime;
+
     &:hover,
     &:focus {
         background-color: $orderButtonActive;
     }
+}
+
+.mobile-menu__button-close {
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    border: none;
+    background-color: transparent;
+}
+
+.mobile-menu__button-menu {
+    // position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 10px;
+    right: 15px;
+    padding: 0;
+    border: none;
+    background: none;
+
+    @media screen and (min-width: $tablet) {
+        display: none;
+    }
+}
+
+.mobile-menu__button-menu__icon {
+    width: 40px;
+    height: 40px;
 }
 
 .order__button {
@@ -27,6 +62,7 @@
 .footer__button {
     display: flex;
     align-items: center;
+    margin: 0 auto;
 }
 
 .modal__button {
@@ -69,6 +105,7 @@
     border: none;
     border-radius: 4px;
     transition: color $anime, background-color $anime, box-shadow $anime;
+
     &:hover,
     &:focus {
         color: $whiteColor;

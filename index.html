@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="./css/main.min.css">
     <!-- <link rel="stylesheet" href="./css/style.css"> -->
-    <title>Студія</title>
+    <title>WebStudio</title>
 </head>
 
 <body>
@@ -51,6 +51,11 @@
                         </a>
                     </li>
                 </ul>
+                <button class="mobile-menu__button-menu">
+                    <svg class="mobile-menu__button-menu__icon">
+                        <use href="./images/icons.svg#mobile-menu"></use>
+                    </svg>
+                </button>
             </div>
         </div>
     </header>
@@ -59,17 +64,16 @@
     <main class="main">
 
         <!--Order a service-->
-
-        <section class="order-service">
+        <!-- <section class="order-service">
             <div class="overlay">
                 <h1 class="main__title">Ефективні рішення для вашого бізнесу</h1>
                 <button class="button order__button" type="button" data-modal-open>Замовити послугу</button>
             </div>
-        </section>
+        </section> -->
 
 
         <!--Our features-->
-        <section class="features section">
+        <!-- <section class="features section">
             <div class="container">
                 <h2 class="features__title visually-hidden">Наші особливості</h2>
                 <ul class="features__list">
@@ -109,10 +113,10 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
 
         <!--list of services-->
-        <section class="services section">
+        <!-- <section class="services section">
             <div class="container">
                 <h2 class="services__title">Чим ми займаємося</h2>
                 <ul class="services__list">
@@ -127,15 +131,15 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
 
         <!-- Our Team -->
-        <section class="team section">
+        <!-- <section class="team section">
             <div class="container">
                 <h2 class="team__title">Наша команда</h2>
                 <ul class="employee-cards">
                     <li class="employee-cards__item">
-                        <img src="./images/mykhailo.jpg" alt="Ігор Дем'яненко" width="270">
+                        <img src="./images/mykhailo-mobile.jpg" alt="Ігор Дем'яненко">
                         <div class="employee-cards-text">
                             <h3 class="employee-title">Ігор Дем'яненко</h3>
                             <p class="employee-description" lang="en">Product Designer</p>
@@ -172,7 +176,7 @@
                         </div>
                     </li>
                     <li class="employee-cards__item">
-                        <img src="./images/olha.jpg" alt="Ольга Рєпіна" width="270">
+                        <img src="./images/olha-mobile.jpg" alt="Ольга Рєпіна">
                         <div class="employee-cards-text">
                             <h3 class="employee-title">Ольга Рєпіна</h3>
                             <p class="employee-description" lang="en">Frontend Developer</p>
@@ -209,7 +213,7 @@
                         </div>
                     </li>
                     <li class="employee-cards__item">
-                        <img src="./images/mykola.jpg" alt="Микола Тарасов" width="270">
+                        <img src="./images/mykola-mobile.jpg" alt="Микола Тарасов">
                         <div class="employee-cards-text">
                             <h3 class="employee-title">Микола Тарасов</h3>
                             <p class="employee-description" lang="en">Marketing</p>
@@ -246,7 +250,7 @@
                         </div>
                     </li>
                     <li class="employee-cards__item">
-                        <img src="./images/igor.jpg" alt="Михайло Єрмаков" width="270">
+                        <img src="./images/igor-mobile.jpg" alt="Михайло Єрмаков">
                         <div class="employee-cards-text">
                             <h3 class="employee-title">Михайло Єрмаков</h3>
                             <p class="employee-description" lang="en">UI Designer</p>
@@ -284,10 +288,10 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
 
         <!--Regulary Clients-->
-        <section class="clients section">
+        <!-- <section class="clients section">
             <div class="container">
                 <h2 class="clients__title">Постійні клієнти</h2>
                 <ul class="clients__list">
@@ -335,11 +339,11 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
     </main>
 
     <!-- Footer -->
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="container">
             <div class="footer__container">
                 <div class="footer__post">
@@ -400,10 +404,10 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </footer> -->
 
     <!-- Modal window -->
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <div class="modal__container">
                 <button class="modal__button-close" data-modal-close>
@@ -463,6 +467,28 @@
                     <button class="button modal__button" type="submit">Відправити</button>
                 </form>
             </div>
+        </div>
+    </div> -->
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu">
+        <div class="container">
+            <!-- <button class="mobile-menu__button-close" data-modal-close>
+                <svg class="modal__icon-close">
+                    <use href="./images/icons.svg#mobile-close"></use>
+                </svg>
+            </button> -->
+            <ul class="mobile-menu__nav">
+                <li class="mobile-menu__item">
+                    <a href=" ./index.html" class="link mobile-menu__link active">Студія</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="./portfolio.html" class="link mobile-menu__link">Портфоліо</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href=" #" class="link mobile-menu__link">Контакти</a>
+                </li>
+            </ul>
         </div>
     </div>
 

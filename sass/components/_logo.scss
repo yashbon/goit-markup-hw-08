@@ -2,17 +2,25 @@
     display: block;
     font-family: 'Raleway';
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+    font-size: 24px;
+    line-height: 1.17;
+
     &-first {
         color: $accentColor;
     }
+
     &__header {
-        margin-right: 93px;
+        // margin-right: 93px;
         color: $blackColor;
     }
+
     &__footer {
         margin: 0 0 20px 0;
         color: $whiteColor;
+    }
+
+    @media screen and (min-width: $desktop) {
+        font-size: 26px;
+        line-height: 1.19;
     }
 }

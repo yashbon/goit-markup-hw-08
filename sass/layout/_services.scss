@@ -1,4 +1,5 @@
 .services {
+    display: none;
     padding-top: 0;
     &__title {
         margin-bottom: 50px;
@@ -28,5 +29,12 @@
     }
     &__item {
         position: relative;
+    }
+    // Media
+    @media screen and (min-width: $tablet) {
+        display: block;
+    }
+    @media screen and (min-width: $desktop) {
+        display: block;
     }
 }
