@@ -1,5 +1,6 @@
 .button {
-    padding: 10px 32px;
+    // padding: 10px 32px;
+    padding: 10px 24px;
     color: $whiteColor;
     font-family: inherit;
     font-weight: 700;
@@ -16,6 +17,10 @@
     &:hover,
     &:focus {
         background-color: $orderButtonActive;
+    }
+
+    @media screen and (min-width: $desktop) {
+        padding: 10px 32px;
     }
 }
 

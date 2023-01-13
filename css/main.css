@@ -370,7 +370,7 @@ img {
 }
 
 .button {
-  padding: 10px 32px;
+  padding: 10px 24px;
   color: #FFFFFF;
   font-family: inherit;
   font-weight: 700;
@@ -386,6 +386,11 @@ img {
 }
 .button:hover, .button:focus {
   background-color: #188CE8;
+}
+@media screen and (min-width: 1200px) {
+  .button {
+    padding: 10px 32px;
+  }
 }
 
 .mobile-menu__button-close {
@@ -515,12 +520,18 @@ img {
   height: 400px;
   margin-left: auto;
   margin-right: auto;
-  padding: 118px 60px;
+  padding: 118px 0;
   background-color: #C4C4C4;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/overlay.jpg);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+@media screen and (min-width: 1200px) {
+  .overlay {
+    max-width: 1600px;
+    height: 600px;
+    padding: 200px 0;
+  }
 }
 
 .employee-cards {
@@ -664,6 +675,7 @@ img {
 
 .container {
   min-width: 200px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -787,7 +799,7 @@ img {
 }
 
 .main__title {
-  max-width: 696px;
+  max-width: 360px;
   margin: 0 auto 30px;
   color: #FFFFFF;
   font-weight: 900;
@@ -795,6 +807,13 @@ img {
   line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+@media screen and (min-width: 1200px) {
+  .main__title {
+    max-width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .features__list {

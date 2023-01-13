@@ -3,7 +3,8 @@
 }
 
 .main__title {
-    max-width: 696px;
+    // max-width: 696px;
+    max-width: 360px;
     margin: 0 auto 30px;
     color: $whiteColor;
     font-weight: 900;
@@ -13,4 +14,10 @@
     line-height: 1.62;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+
+    @media screen and (min-width: $desktop) {
+        max-width: 696px;
+        font-size: 44px;
+        line-height: 1.36;
+    }
 }

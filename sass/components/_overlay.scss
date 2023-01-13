@@ -4,10 +4,16 @@
     margin-left: auto;
     margin-right: auto;
     // padding: 200px 0;
-    padding: 118px 60px;
+    padding: 118px 0;
     background-color: $overlayBackgroundColor;
-    background-image: linear-gradient(to right, $overlayClor, $overlayClor), url(../images/overlay.jpg);
+    // background-image: linear-gradient(to right, $overlayClor, $overlayClor), url(../images/overlay.jpg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
+
+    @media screen and (min-width: $desktop) {
+        max-width: 1600px;
+        height: 600px;
+        padding: 200px 0;
+    }
 }
