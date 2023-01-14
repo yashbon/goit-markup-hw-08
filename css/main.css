@@ -333,6 +333,12 @@ h3 {
 .section {
   padding: 60px 0;
 }
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 
 body {
   background-color: #FFFFFF;
@@ -534,14 +540,49 @@ img {
   }
 }
 
-.employee-cards {
-  max-width: 450px;
+@media screen and (min-width: 768px) {
+  .employee-cards {
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .employee-cards {
+    min-width: 1200px;
+  }
 }
 .employee-cards__item {
+  width: 450px;
+  height: 622px;
   margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: #FFFFFF;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+@media screen and (min-width: 768px) {
+  .employee-cards__item {
+    margin-bottom: 0;
+    width: 354px;
+    height: 536px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .employee-cards__item {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .employee-cards__item {
+    width: 270px;
+    height: 428px;
+  }
 }
 .employee-cards-text {
   padding: 30px 0;
@@ -931,11 +972,6 @@ img {
 .services__item {
   position: relative;
 }
-@media screen and (min-width: 768px) {
-  .services {
-    display: block;
-  }
-}
 @media screen and (min-width: 1200px) {
   .services {
     display: block;
@@ -946,12 +982,19 @@ img {
   background-color: #F5F4FA;
 }
 .team__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   color: #212121;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.14;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .team__title {
+    font-size: 36px;
+    line-height: 1.14;
+    margin-bottom: 50px;
+  }
 }
 .team img {
   max-width: 450px;

@@ -1,6 +1,7 @@
 .services {
     display: none;
     padding-top: 0;
+
     &__title {
         margin-bottom: 50px;
         color: $titleColor;
@@ -9,6 +10,7 @@
         line-height: 1.14;
         text-align: center;
     }
+
     &__subtitle {
         position: absolute;
         bottom: 0;
@@ -22,18 +24,22 @@
         color: $whiteColor;
         background: $backgroroundSeviceTitle;
     }
+
     &__list {
         display: flex;
         align-items: center;
         column-gap: 30px;
     }
+
     &__item {
         position: relative;
     }
+
     // Media
     @media screen and (min-width: $tablet) {
-        display: block;
+        // display: block;
     }
+
     @media screen and (min-width: $desktop) {
         display: block;
     }
