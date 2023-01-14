@@ -1,22 +1,51 @@
 .project {
-    flex-basis: calc(100% / 3 - $widthGap);
+    max-width: 450px;
+
+    // flex-basis: calc(100% / 3 - $widthGap); ПЕРЕВІРИТИ!!!!!!!!
+
+    margin-left: auto;
+    margin-right: auto;
+    overflow-y: hidden;
+
+
+    // margin-bottom: 30px;
+    &:not(:last-child) {
+        margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: $tablet) {
+        width: 354px;
+        height: 440px;
+        margin-left: initial;
+        margin-right: auto;
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: 370px;
+        // height: 404px;
+    }
+
     &__link {
         display: block;
         transition: box-shadow $anime;
+
         &:hover,
         &:focus {
             box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+
             .project__about-text {
                 transform: translateY(-100%);
             }
         }
     }
+
     &__description {
         padding: 20px 24px;
         border-left: 1px solid $projectBorderColor;
         border-right: 1px solid $projectBorderColor;
         border-bottom: 1px solid $projectBorderColor;
     }
+
     &__title {
         margin-bottom: 4px;
         color: $titleColor;
@@ -25,27 +54,51 @@
         line-height: 2;
         letter-spacing: 0.06em;
     }
+
     &__text {
         color: $texCcolor;
         font-size: 16px;
         line-height: 1.88;
     }
+
     &__about {
         position: relative;
-        width: 370px;
+        // width: 370px;
         height: 294px;
         overflow: hidden;
+
         &-text {
             position: absolute;
             width: 100%;
             height: 100%;
-            padding: 63px 24px;
+            // padding: 63px 24px;
+            padding: 77px 24px;
+            // overflow: hidden;
+            overflow: auto;
             color: $whiteColor;
             font-size: 18px;
             line-height: 1.56;
             letter-spacing: 0.03em;
             background-color: $backgroundAboutProject;
             transition: transform $anime;
+
+            @media screen and (min-width: $tablet) {
+                padding: 49px 24px;
+
+            }
+
+            // @media screen and (max-width: 438px) {
+            //     &:after {
+            //         content: "";
+            //         position: absolute;
+            //         left: 0;
+            //         bottom: 0;
+            //         width: 100%;
+            //         height: 170px;
+            //         background: linear-gradient(180deg, transparent, $accentColor 50%);
+            //     }
+            // }
+
         }
     }
 }
