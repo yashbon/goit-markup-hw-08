@@ -4,6 +4,7 @@
     font-size: 14px;
     line-height: 1.71;
     transition: color $anime;
+
     &:hover,
     &:focus {
         color: $accentColor;
@@ -16,6 +17,7 @@
     font-size: 14px;
     line-height: 1.71;
     transition: color $anime;
+
     &:hover,
     &:focus {
         color: $accentColor;
@@ -23,7 +25,12 @@
 }
 
 .footer__item:not(:last-child) {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
+
+    @media screen and (min-width: $desktop) {
+        margin-bottom: 9px;
+    }
+
 }
 
 .footer__title {

@@ -51,6 +51,7 @@
     height: 120px;
     padding: 12px 16px;
     resize: none;
+
     &::placeholder {
         font-family: inherit;
         font-size: 12px;
@@ -87,6 +88,7 @@
 
 .modal__check {
     appearance: none;
+
     &:checked+.modal__icon-check {
         fill: $whiteColor;
         background-color: $accentColor;
@@ -116,14 +118,35 @@
 }
 
 // Footer form
+.footer__form-subscribe {
+
+
+    @media screen and (min-width: $tablet) {
+        width: 450px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: 570px;
+    }
+}
+
 .footer__form-wrop {
     // display: flex;
-    column-gap: 12px;
+    // column-gap: 12px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (min-width: $desktop) {
+        display: flex;
+        column-gap: 12px;
+        justify-content: space-between
+    }
 }
 
 .footer__form-input {
     // width: 358px;
     width: 100%;
+    max-width: 450px;
     margin-bottom: 20px;
     padding: 15px 16px;
     font-size: 16px;
@@ -133,10 +156,20 @@
     background-color: $footerBackgroundOrderService;
     border: 1px solid $footerInputBackground;
     border-radius: 4px;
+
+    @media screen and (min-width: $desktop) {
+        width: 358px;
+        margin-bottom: 0;
+        // margin: 0;
+    }
 }
 
 .icon-subscribe {
     // width: 100%;
     fill: $whiteColor;
     margin-left: 10px;
+
+    @media screen and (min-width: $desktop) {
+        // width: 100%;
+    }
 }

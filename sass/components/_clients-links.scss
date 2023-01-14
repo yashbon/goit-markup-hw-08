@@ -4,6 +4,26 @@
     // column-gap: 30px;
     gap: 30px;
     flex-wrap: wrap;
+    justify-content: center;
+
+    @media screen and (min-width: $mobile) {
+        max-width: $mobile;
+        margin-left: auto;
+        margin-right: auto;
+        // justify-content: center;
+    }
+
+    @media screen and (min-width: $tablet) {
+        max-width: $tablet;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @media screen and (min-width: $desktop) {
+        max-width: $desktop;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .clients__link {
@@ -16,10 +36,16 @@
     border: 1px solid $socialClientLinkColor;
     border-radius: 4px;
     transition: color $anime, fill $anime, border $anime;
+
     &:hover,
     &:focus {
         color: $accentColor;
         fill: $accentColor;
         border: 1px solid $accentColor;
     }
+
+    @media screen and (min-width: $desktop) {
+        width: 170px;
+    }
+
 }

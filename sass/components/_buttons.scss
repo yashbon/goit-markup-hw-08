@@ -67,7 +67,15 @@
 .footer__button {
     display: flex;
     align-items: center;
-    margin: 0 auto;
+    // margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 28px;
+
+    @media screen and (min-width: $desktop) {
+        margin: 0;
+    }
+
 }
 
 .modal__button {

@@ -1,7 +1,23 @@
 .filter__list {
     display: flex;
-    margin-bottom: 50px;
+    // margin-bottom: 50px;
+    max-width: 326px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
     column-gap: 8px;
+    row-gap: 15px;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+
+    @media screen and (min-width: $tablet) {
+        max-width: $tablet;
+        margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        max-width: $desktop;
+        margin-bottom: 48px;
+    }
 }

@@ -2,20 +2,57 @@
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: $footerBackgroundOrderService;
+
     &__container {
         // display: flex;
         column-gap: 70px;
         text-align: center;
         justify-content: space-between;
         align-items: baseline;
+
+        @media screen and (min-width: $tablet) {
+            max-width: $tablet;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        @media screen and (min-width: $desktop) {
+            max-width: $desktop;
+            text-align: start;
+            margin: 0;
+            display: flex;
+            flex-wrap: nowrap;
+            // column-gap: 70px;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+
     }
+
     .social-list__link {
         fill: $whiteColor;
     }
+
     &__post {
         margin-bottom: 60px;
+
+        @media screen and (min-width: $desktop) {
+            margin-bottom: 0;
+        }
     }
+
+
+
     &__join {
         margin-bottom: 60px;
+
+        @media screen and (min-width: $desktop) {
+            margin-bottom: 0;
+        }
     }
+
+
 }
