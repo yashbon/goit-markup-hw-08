@@ -2,7 +2,7 @@
 @import 'utils/variables';
 @import 'utils/visually-hidden';
 @import 'utils/breakpoints';
-@import 'utils/active';
+
 // Base
 @import 'base/modern-normalize';
 @import 'base/reset';
@@ -30,3 +30,5 @@
 @import 'layout/forms';
 @import 'layout/modal';
 @import 'layout/mobile-menu';
+//
+@import 'utils/active';

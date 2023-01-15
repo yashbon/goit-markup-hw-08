@@ -10,3 +10,11 @@
     clip-path: inset(50%);
     margin: -1px;
 }
+
+
+.mobile-menu.is-open {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
