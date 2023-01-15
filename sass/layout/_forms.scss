@@ -2,7 +2,7 @@
 .modal__form-field {
     display: flex;
     flex-direction: column;
-    height: 58px;
+    // height: 58px;
     margin-bottom: 10px;
 }
 
@@ -83,7 +83,12 @@
 
 .modal__form-check {
     margin-bottom: 30px;
-    text-align: center;
+    // text-align: center;
+    text-align: left;
+
+    @media screen and (min-width: $desktop) {
+        text-align: center;
+    }
 }
 
 .modal__check {
@@ -97,20 +102,33 @@
 }
 
 .modal__icon-check {
-    margin-right: 8px;
+    // margin-right: 8px;
     vertical-align: middle;
     border: 2px solid $titleColor;
     border-radius: 2px;
     fill: transparent;
     transition: color $anime, fill $anime, border $anime;
+
+    @media screen and (min-width: $desktop) {
+        margin-right: 8px;
+    }
 }
 
 .modal__form-agreement {
     display: inline-block;
-    font-size: 14px;
+    // font-size: 14px;
+    font-size: 12px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: $texCcolor;
+
+    @media screen and (min-width: $desktop) {
+        font-size: 14px;
+    }
+}
+
+.modal__text-agreement {
+    vertical-align: middle;
 }
 
 .terms-agreement {

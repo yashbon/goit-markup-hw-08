@@ -18,10 +18,10 @@
         &__item:not(:last-child) {
             margin-bottom: 32px;
         }
+    }
 
-        @media screen and (min-width:$tablet) {
-            display: none;
-        }
+    @media screen and (min-width:$tablet) {
+        display: none;
     }
 }
 
