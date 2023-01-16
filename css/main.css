@@ -1131,7 +1131,7 @@ img {
   }
 }
 .team img {
-  max-width: 450px;
+  width: 100%;
 }
 
 .clients__title {
