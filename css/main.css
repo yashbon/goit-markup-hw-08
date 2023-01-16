@@ -846,6 +846,9 @@ img {
     width: 100%;
   }
 }
+.project__about img {
+  width: 100%;
+}
 
 .container {
   min-width: 200px;
