@@ -850,9 +850,13 @@ img {
 
 .container {
   min-width: 200px;
-  max-width: 480px;
   margin: 0 auto;
   padding: 0 15px;
+}
+@media screen and (max-width: 767px) {
+  .main .container {
+    max-width: 480px;
+  }
 }
 @media screen and (min-width: 768px) {
   .container {
