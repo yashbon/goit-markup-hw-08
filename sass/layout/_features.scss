@@ -3,13 +3,13 @@
     // margin: 94px 0;
     // min-width: $tablet;
     @media screen and (min-width: $tablet) {
-        max-width: $tablet;
+        // max-width: $tablet;
         margin-left: auto;
         margin-right: auto;
     }
 
     @media screen and (min-width: $desktop) {
-        min-width: $desktop;
+        // min-width: $desktop;
     }
 }
 
@@ -74,10 +74,12 @@
 
     @media screen and (min-width: $tablet) {
         width: 354px;
+        margin-bottom: 0;
     }
 
     @media screen and (min-width: $desktop) {
         width: 270px;
+        // margin-bottom: 0;
     }
 }
 

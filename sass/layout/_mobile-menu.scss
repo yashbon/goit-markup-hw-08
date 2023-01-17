@@ -1,7 +1,16 @@
-.mobile-menu {
-    @media screen and (max-width:767px) {
-        outline: solid red;
+.vision {
+    @media screen and (min-width: $tablet) {
         display: none;
+    }
+}
+
+.mobile-menu {
+
+
+    @media screen and (max-width:767px) {
+        // outline: solid red;
+        display: none;
+        visibility: hidden;
         width: 100%;
         height: 100%;
         background: $whiteColor;
@@ -23,6 +32,7 @@
     @media screen and (min-width:$tablet) {
         display: none;
     }
+
 }
 
 
@@ -71,6 +81,10 @@
     font-size: 24px;
     line-height: 1.17;
     letter-spacing: 0.02em;
+
+    @media screen and (max-width: 479px) {
+        font-size: 6vw;
+    }
 }
 
 .mobile-menu__contacts-phone {
@@ -79,9 +93,11 @@
     font-weight: 500;
     font-size: 34px;
     line-height: 1.18;
-    /* identical to box height */
-
     letter-spacing: 0.02em;
+
+    @media screen and (max-width: 479px) {
+        font-size: 7vw;
+    }
 }
 
 .mobile-menu__socials {
@@ -89,7 +105,7 @@
     justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
-    column-gap: 10px;
+    gap: 10px;
 
 
 }

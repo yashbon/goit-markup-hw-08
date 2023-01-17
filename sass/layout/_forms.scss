@@ -9,7 +9,7 @@
 .modal__form-label {
     margin-bottom: 4px;
     font-size: 12px;
-    line-height: 0.86;
+    line-height: 1.17;
     letter-spacing: 0.01em;
     color: $texCcolor;
 }
@@ -84,7 +84,7 @@
 .modal__form-check {
     margin-bottom: 30px;
     // text-align: center;
-    text-align: left;
+    // text-align: left;
 
     @media screen and (min-width: $desktop) {
         text-align: center;
@@ -118,12 +118,14 @@
     display: inline-block;
     // font-size: 14px;
     font-size: 12px;
-    line-height: 1.71;
+    // line-height: 1.71;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     color: $texCcolor;
 
     @media screen and (min-width: $desktop) {
         font-size: 14px;
+        line-height: 1.71;
     }
 }
 
