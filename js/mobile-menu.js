@@ -1,7 +1,7 @@
 (() => {
-    const menuBtnRef = document.querySelector("[mobile-menu-open]");
-    const mobileMenuRef = document.querySelector("[mobile-menu]");
-    const mobileBtnClose = document.querySelector("[mobile-menu-close]");
+    const menuBtnRef = document.querySelector("[data-menu-open]");
+    const mobileMenuRef = document.querySelector("[data-menu]");
+    const mobileBtnClose = document.querySelector("[data-menu-close]");
   
     menuBtnRef.addEventListener("click", () => {
       mobileMenuRef.classList.toggle("is-open");

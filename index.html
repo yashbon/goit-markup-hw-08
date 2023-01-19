@@ -38,21 +38,21 @@
                 <ul class="header__contacts">
                     <li class="header__item">
                         <a href="mailto:info@devstudio.com" class="header__contacts-link link ">
-                            <svg class="envelope" width="16" height="12">
+                            <svg class="envelope">
                                 <use href="./images/icons.svg#envelope"></use>
                             </svg>info@devstudio.com
                         </a>
                     </li>
                     <li class="header__item">
                         <a href="tel:+380961111111" class="header__contacts-link link">
-                            <svg class="smartphone" width="10" height="16">
+                            <svg class="smartphone">
                                 <use href="./images/icons.svg#smartphone"></use>
                             </svg>+38 096 111 11 11
                         </a>
                     </li>
                 </ul>
 
-                <button class="mobile-menu__button-menu" type="button" mobile-menu-open>
+                <button class="mobile-menu__button-menu" type="button" data-menu-open>
                     <svg class="mobile-menu__button-menu__icon" aria-label="Mobile menu">
                         <use class="mobile-menu__open" href="./images/icons.svg#mobile-menu"></use>
                         <!-- <use class="mobile-menu__close " href="./images/icons.svg#mobile-close"></use> -->
@@ -505,9 +505,9 @@
     </div>
 
     <!-- Mobile menu -->
-    <div class="mobile-menu" mobile-menu>
+    <div class="mobile-menu" data-menu>
         <div class="vision">
-            <button class="mobile-menu__button-close" type="button" mobile-menu-close>
+            <button class="mobile-menu__button-close" type="button" data-menu-close>
                 <svg class="mobile-menu__icon-close">
                     <use href="./images/icons.svg#mobile-close"></use>
                 </svg>

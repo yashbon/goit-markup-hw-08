@@ -18,8 +18,8 @@
     visibility: visible;
     pointer-events: auto;
 
-    // @media screen and (min-width: 768px) {
-    //     display: none;
-    //     visibility: hidden;
-    // }
+    @media screen and (min-width: 768px) {
+        display: none;
+        //     visibility: hidden;
+    }
 }

@@ -1,11 +1,10 @@
-.vision {
-    @media screen and (min-width: $tablet) {
-        display: none;
-    }
-}
+// .vision {
+//     @media screen and (min-width: $tablet) {
+//         display: none;
+//     }
+// }
 
 .mobile-menu {
-
 
     @media screen and (max-width:767px) {
         // outline: solid red;
@@ -29,9 +28,9 @@
         }
     }
 
-    @media screen and (min-width:$tablet) {
-        display: none;
-    }
+    // @media screen and (min-width:$tablet) {
+    //     display: none;
+    // }
 
 }
 
