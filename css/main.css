@@ -998,7 +998,7 @@ img {
   height: 14px;
   margin-right: 8px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .smartphone {
     width: 10px;
     height: 16px;
@@ -1083,6 +1083,8 @@ img {
 
 .features__item {
   width: 100%;
+}
+.features__item:not(:last-child) {
   margin-bottom: 30px;
 }
 @media screen and (min-width: 768px) {
